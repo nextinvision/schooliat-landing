@@ -1,5 +1,5 @@
-import Image from "next/image";
 import type { Metadata } from "next";
+import TeamImage from "../components/TeamImage";
 
 export const metadata: Metadata = {
   title: "About Us – SchooliAt",
@@ -87,18 +87,14 @@ export default function AboutPage() {
             >
               {/* Image */}
               <div className="relative rounded-xl sm:rounded-2xl overflow-hidden bg-gray-100 aspect-[3/4] sm:aspect-[4/5]">
-                <Image
+                <TeamImage
                   src={member.image}
                   alt={`${member.name} - ${member.role}`}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  unoptimized
                   priority={index < 3}
                 />
 
                 {/* Name Badge */}
-                <div className="absolute bottom-2 sm:bottom-3 left-2 sm:left-3 bg-white px-2 sm:px-3 py-1 rounded-full shadow text-xs sm:text-sm font-medium">
+                <div className="absolute bottom-2 sm:bottom-3 left-2 sm:left-3 bg-white px-2 sm:px-3 py-1 rounded-full shadow text-xs sm:text-sm font-medium z-10">
                   {member.name}
                 </div>
               </div>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Footer() {
@@ -27,19 +28,19 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2 text-xs sm:text-sm text-[#e9f2df]">
               <li className="hover:text-white cursor-pointer transition-colors">
-                <a href="/">Home</a>
+                <Link href="/">Home</Link>
               </li>
               <li className="hover:text-white cursor-pointer transition-colors">
                 <a href="/about">About Us</a>
               </li>
               <li className="hover:text-white cursor-pointer transition-colors">
-                <a href="/#features">Features</a>
+                <Link href="#features">Features</Link>
               </li>
               <li className="hover:text-white cursor-pointer transition-colors">
-                <a href="/#contact">Contact Us</a>
+                <Link href="#contact">Contact Us</Link>
               </li>
               <li className="hover:text-white cursor-pointer transition-colors">
-                <a href="/opportunity">Opportunity</a>
+                <Link href="/opportunity">Opportunity</Link>
               </li>
             </ul>
           </div>
