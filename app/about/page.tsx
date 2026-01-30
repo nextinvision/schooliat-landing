@@ -26,14 +26,14 @@ const team = [
   {
     name: "Gaurav Prajapati",
     role: "Co-Founder",
-    image: "/team/gaurav-developer.jpg",
+    image: "/team/Gaurav-developer.jpg",
     description:
       "MCA candidate from HBTU, Kanpur with hands-on expertise in MERN stack, PHP, and modern web technologies, leading SchooliAt's technical architecture and product scalability.",
   },
   {
     name: "Shivam Kumar",
     role: "Co-Founder",
-    image: "/team/shivam.jpg",
+    image: "/team/Shivam.jpg",
     description:
       "MBA graduate from MONIRBA, Allahabad University, with hands-on teaching experience. His practical understanding of classroom and academic workflows helps us design ERP solutions that genuinely support teachers and students.",
   },
@@ -86,13 +86,15 @@ export default function AboutPage() {
               className="bg-[#e9f2df] rounded-2xl sm:rounded-3xl p-4 sm:p-5 md:p-6 shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
             >
               {/* Image */}
-              <div className="relative rounded-xl sm:rounded-2xl overflow-hidden bg-white aspect-[3/4] sm:aspect-[4/5]">
+              <div className="relative rounded-xl sm:rounded-2xl overflow-hidden bg-gray-100 aspect-[3/4] sm:aspect-[4/5]">
                 <Image
                   src={member.image}
-                  alt={member.name}
+                  alt={`${member.name} - ${member.role}`}
                   fill
                   className="object-cover"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  unoptimized
+                  priority={index < 3}
                 />
 
                 {/* Name Badge */}

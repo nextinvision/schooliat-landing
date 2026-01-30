@@ -91,7 +91,7 @@ export default function Footer() {
           <div className="flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4 text-xs sm:text-sm text-[#e9f2df] text-center sm:text-left">
             <p>© {currentYear} SchooliAT. All rights reserved.</p>
             <p className="sm:mt-0">
-              Designed & Developed with ❤️ for Smart Schools
+              Designed & Developed by NEXTIN VISION 
             </p>
           </div>
         </div>
